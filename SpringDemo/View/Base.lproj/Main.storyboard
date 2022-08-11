@@ -37,7 +37,7 @@
                                 <rect key="frame" x="60" y="104" width="294" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKV-S6-gyp">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="140"/>
+                                        <rect key="frame" x="6" y="6" width="282" height="128"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -46,10 +46,10 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="1o5-QF-Y0b"/>
-                                    <constraint firstItem="PKV-S6-gyp" firstAttribute="leading" secondItem="9Vn-RA-I8E" secondAttribute="leading" id="TRH-uI-BQy"/>
-                                    <constraint firstItem="PKV-S6-gyp" firstAttribute="top" secondItem="9Vn-RA-I8E" secondAttribute="top" id="XvE-y7-qdo"/>
-                                    <constraint firstAttribute="trailing" secondItem="PKV-S6-gyp" secondAttribute="trailing" id="k01-cL-M0o"/>
-                                    <constraint firstAttribute="bottom" secondItem="PKV-S6-gyp" secondAttribute="bottom" id="l6J-yA-knK"/>
+                                    <constraint firstItem="PKV-S6-gyp" firstAttribute="leading" secondItem="9Vn-RA-I8E" secondAttribute="leading" constant="6" id="TRH-uI-BQy"/>
+                                    <constraint firstItem="PKV-S6-gyp" firstAttribute="top" secondItem="9Vn-RA-I8E" secondAttribute="top" constant="6" id="XvE-y7-qdo"/>
+                                    <constraint firstAttribute="trailing" secondItem="PKV-S6-gyp" secondAttribute="trailing" constant="6" id="k01-cL-M0o"/>
+                                    <constraint firstAttribute="bottom" secondItem="PKV-S6-gyp" secondAttribute="bottom" constant="6" id="l6J-yA-knK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -65,6 +65,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationParametersLabel" destination="PKV-S6-gyp" id="gBa-xf-Bc9"/>
                         <outlet property="animationView" destination="9Vn-RA-I8E" id="WAp-EH-cjW"/>
                     </connections>
                 </viewController>
